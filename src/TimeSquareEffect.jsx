@@ -8,9 +8,6 @@ const fragmentShader = /* glsl */`
 
 export default class TimeSquareEffect extends Effect {
     constructor() {
-        super(
-            'TimeSquareEffect',
-            fragmentShader
-        );
+        super('TimeSquareEffect', fragmentShader);
     }
 }
