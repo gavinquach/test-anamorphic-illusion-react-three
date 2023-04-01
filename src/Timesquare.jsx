@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import { useGLTF, PerspectiveCamera } from "@react-three/drei";
 
 export default function Timesquare(props) {
-  const { nodes, materials } = useGLTF("./timesquare.glb");
+  const { nodes, materials } = useGLTF("./models/timesquare.glb");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -229,4 +229,4 @@ export default function Timesquare(props) {
   );
 }
 
-useGLTF.preload("./timesquare.glb");
+useGLTF.preload("./models/timesquare.glb");
